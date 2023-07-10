@@ -1,8 +1,7 @@
 # Employee Management System
-The Employee Management System is a web application built using Spring Boot that allows users to manage employee data. It provides CRUD (Create, Read, Update, Delete) operations via RESTful APIs, along with a user interface built using Thymeleaf templates. The application also includes authentication and authorization using Spring Security to secure the APIs and restrict access to authorized users.
+The Employee Management System is a web application built using Spring Boot that allows users to manage employee data. It provides CRUD (Create, Read, Update, Delete) operations via RESTful APIs, along with a user interface built using Thymeleaf templates.
 
 ## Features
-+ User authentication and authorization using Spring Security.
 + Create, Read, Update, and Delete employee records.
 + RESTful APIs for accessing employee data.
 + User-friendly interface using Thymeleaf templates.
@@ -11,7 +10,6 @@ The Employee Management System is a web application built using Spring Boot that
 ## Technologies Used
 + Spring Boot
 + Spring MVC
-+ Spring Security
 + Hibernate
 + Thymeleaf
 + Spring Data JPA
@@ -62,7 +60,3 @@ POST /api/employees: Create a new employee.
 GET /api/employees/{id}: Get details of a specific employee.
 PUT /api/employees/{id}: Update details of a specific employee.
 DELETE /api/employees/{id}: Delete a specific employee.
-
-# Security
-The application uses Spring Security for user authentication and authorization. By default, only authenticated users can access the protected resources. Admin users have additional privileges to perform CRUD operations on employee data.
--->
