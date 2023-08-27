@@ -1,6 +1,9 @@
 # Employee Management System
 The Employee Management System is a web application built using Spring Boot that allows users to manage employee data. It provides CRUD (Create, Read, Update, Delete) operations via RESTful APIs, along with a user interface built using Thymeleaf templates.
 
+![image](https://github.com/AnujGaur006/spring-boot-crud-application/assets/134039018/e0a46aa1-13ca-4201-a946-eae90fe9ba10)
+
+
 ## Features
 + Create, Read, Update, and Delete employee records.
 + RESTful APIs for accessing employee data.
@@ -15,7 +18,7 @@ The Employee Management System is a web application built using Spring Boot that
 + Spring Data JPA
 + MySQL (or any other supported database)
   
-<!-- # Prerequisites
+
 Before running the application, make sure you have the following prerequisites installed:
 
 * Java Development Kit (JDK) 11 or higher
@@ -26,8 +29,9 @@ Before running the application, make sure you have the following prerequisites i
 + Clone the repository:
 
 bash
-Copy code
-git clone https://github.com/AnujGaur006/spring-boot-crud-applicatino.git
+* Copy code
+* git clone https://github.com/AnujGaur006/spring-boot-crud-application.git
+  
 + Update the database configuration:
 
 Open the application.properties file located in the src/main/resources directory.
@@ -35,28 +39,21 @@ Update the database connection details such as URL, username, and password accor
 Build the application:
 
 bash
-Copy code
-cd employee-management-system
-mvn clean package
-Run the application:
+* cd employee-management-system
+* mvn clean package
+* java -jar target/employee-management-system.jar
 
-bash
-Copy code
-java -jar target/employee-management-system.jar
-Access the application:
++ Access the application:
 
-+ Open a web browser and navigate to http://localhost:8080 (or the configured port) to access the Employee Management System.
++ Open a web browser and navigate to http://localhost:8080/employees/list (or the configured port) to access the Employee Management System.
 
 # Usage
-Register a new user account to access the system.
-Log in with your credentials.
 Use the user interface to manage employee data or access the RESTful APIs for programmatic access.
 
 # API Documentation
 The Employee Management System provides the following RESTful APIs:
 
-GET /api/employees: Get a list of all employees.
-POST /api/employees: Create a new employee.
-GET /api/employees/{id}: Get details of a specific employee.
-PUT /api/employees/{id}: Update details of a specific employee.
-DELETE /api/employees/{id}: Delete a specific employee.
++ GET /employees/list: Get a list of all employees.
++ POST /employees/save: Create a new employee.
++ PUT /employees/showFormForUpdate: Update details of a specific employee.
++ DELETE /employees/delete: Delete a specific employee.
